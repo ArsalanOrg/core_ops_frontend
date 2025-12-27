@@ -70,7 +70,7 @@ export default function StockOutModal({
           <FormControl>
             <FormLabel>Amacı</FormLabel>
             <Textarea
-              placeholder='örn. Aileye dağıtım, afetzedeler…'
+              placeholder='Lütfen depo çıkışının amacını giriniz...'
               value={purpose}
               onChange={(e) => setPurpose(e.target.value)}
             />
