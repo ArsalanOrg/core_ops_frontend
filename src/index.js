@@ -1,17 +1,22 @@
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import chakra_theme from './chakra_theme';
+import 'style/index.css';
+import mui_theme from './mui_theme';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ThemeProvider theme={mui_theme}>
+    <ChakraProvider theme={chakra_theme}>
+      <ColorModeScript initialColorMode={chakra_theme.config.initialColorMode} />
+      <CssBaseline />
+      <App />
+    </ChakraProvider>
+  </ThemeProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

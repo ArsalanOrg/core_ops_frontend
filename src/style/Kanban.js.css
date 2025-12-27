@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to bottom right, #3b82f6, #f97316); */
+  margin: 0;
+  padding: 0;
+}
+
+.kanban-container {
+  background: linear-gradient(to bottom, #ffffff, #ecc06e);
+}
+
+.kanban-board {
+  display: flex;
+  gap: 1rem;
+  padding: 0rem;
+}
+
+.column {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Initial height of 100vh */
+  height: auto;
+  /* Allows height to grow as needed */
+}
+
+.column-title {
+  background: linear-gradient(to bottom, #fff455, #ecc06e);
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.yapilacak-title {
+  background: rgb(255, 176, 29);
+}
+
+.devamEden-title {
+  background: #81ecf8;
+}
+
+.tamamlanan-title {
+  background: rgb(72, 168, 72);
+}
+
+.arsiv-title {
+  background: rgb(126, 126, 197);
+  /* background: rgb(238, 255, 237); */
+}
+
+.tasks {
+  flex-grow: 2;
+  /* color:#10e5fc; */
+}
+
+.task {
+  /* background: rgb(219, 248, 215); */
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: -7px 5px 6px 0px #0003, 2px -2px 6px 0px #0003;
+}
+
+.task-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #f08a42;
+  text-align: center;
+}
+
+.task-description {
+  font-size: 0.8rem;
+}
+
+.task-assignee {
+  font-size: 0.7rem;
+  color: rgb(204, 69, 69);
+  margin-top: 0.2em;
+}
+
+.task-due {
+  color: rgb(0, 0, 0);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.move-button {
+  /* position this button to the right */
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.move-button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.no-tasks {
+  color: gray;
+  text-align: center;
+}
+/* 
+.delete-icon {
+  float: right;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.edit-icon {
+  float: right;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.complete-icon {
+  float: right;
+  cursor: pointer;
+  gap: 0.5rem;
+} */
+
+.icon-container {
+  display: flex; /* Makes it a flex container */
+  justify-content: flex-end; /* Aligns icons to the right */
+  gap: 0.5rem; /* Adds spacing between the icons */
+}
+
+.delete-icon,
+.edit-icon,
+.complete-icon {
+  cursor: pointer;
+}
+
+.comment-number-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f08a42;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

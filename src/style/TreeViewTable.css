@@ -1,0 +1,143 @@
+.checkbox {
+  font-size: 16px;
+  user-select: none;
+  min-height: 320px;
+  /* padding: 20px; */
+  box-sizing: content-box;
+  height: -webkit-fill-available;
+}
+
+.checkbox .tree,
+.checkbox .tree-node,
+.checkbox .tree-node-group {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.checkbox .tree-branch-wrapper,
+.checkbox .tree-node__leaf {
+
+  outline: none;
+}
+
+.checkbox .tree-node {
+  cursor: pointer;
+}
+
+.checkbox .tree-node {
+  display: inline-block;
+  width: 100%;
+}
+
+.checkbox .checkbox-icon {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.checkbox .arrow {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.checkbox .arrow--open {
+  transform: rotate(90deg);
+}
+
+.tree-branch-wrapper:nth-child(odd) {
+  background-color: rgb(203, 211, 166);
+  /* margin-bottom: 5px; */
+  padding: 5px;
+  border-bottom: solid black 2px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.tree-branch-wrapper:nth-child(even) {
+  background-color: rgb(183 189 130);
+  /* margin-bottom: 5px; */
+  padding: 5px;
+  border-bottom: solid black 2px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.tree-node-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-wrap: wrap;
+}
+
+.tree-leaf-list-item {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-bottom: solid gray 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox .tree .tree-leaf-list-item .tree-node--selected {
+  background: rgb(178, 209, 245);
+}
+
+.tree-view-data {
+  border-right: 1px solid gray;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  align-content: end;
+  margin-top: 1em;
+}
+
+.tree-branch-wrapper:nth-child(odd) .price-btn {
+  background-color: rgb(183 189 130) !important;
+}
+
+.tree-branch-wrapper:nth-child(even) .price-btn {
+  background-color: rgb(203, 211, 166) !important;
+}
+
+.price-btn {
+  float: right;
+  font-size: small !important;
+  font-weight: bold !important;
+  margin-right: 1em;
+  padding: 0;
+}
+
+
+.year-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+.year-table th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#chakra-modal-priceModal {
+  text-align: center !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  max-width: fit-content !important;
+}
+
+.tree-details-btn {
+  float: right;
+  font-size: small !important;
+  font-weight: bold !important;
+  margin-right: 1em;
+  padding: 0;
+}

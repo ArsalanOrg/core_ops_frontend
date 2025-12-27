@@ -1,0 +1,233 @@
+.chakra-form__label {
+  text-wrap: nowrap;
+}
+
+#cost-box {
+  width: 90%;
+  border: 2px dashed orange;
+  padding: 1.5rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 0.5rem;
+  box-shadow: var(--chakra-shadows-lg);
+  margin-left: 5%;
+  margin-right: 5%;
+  align-self: center;
+}
+
+.details-btn {
+  background-color: white !important;
+  float: left;
+  height: var(--chakra-sizes-8) !important;
+  font-weight: normal !important;
+  font-size: medium !important;
+  outline: 2px solid gray !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.chakra-stack {
+  width: 100%;
+}
+
+#chakra-modal-costModal {
+  text-align: center !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+#chakra-modal-detailsModal {
+  text-align: center !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  max-width: var(--chakra-sizes-xxl);
+}
+
+.cost-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.cost-table {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cost-table tr.bold td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.cost-table tr.nobold td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+.cost-table td:first-child {
+  text-align: left;
+  color: #777;
+}
+
+.cost-table td:last-child {
+  text-align: right;
+  color: #555;
+}
+
+
+.total-cost-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total-cost-card p {
+  font-size: 20px;
+  font-weight: 700;
+  text-wrap-mode: nowrap;
+}
+
+.details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  text-wrap: nowrap;
+}
+
+.details-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.details-table td,
+th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  /* font-size: 8px; */
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details-table td:first-child {
+  text-align: left;
+  color: #777;
+  text-wrap: wrap !important;
+}
+
+
+.details2-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  text-wrap: wrap;
+}
+
+.details2-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.details2-table td,
+th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  /* font-size: 8px; */
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details2-table td:first-child {
+  text-align: left;
+  color: #777;
+  text-wrap: wrap !important;
+}
+
+.details2-table td:last-child {
+  background-color: #F6AD55;
+}
+
+.table-heading {
+  font-size: large;
+}
+
+.MuiInputBase-input {
+  padding: 10px 14px !important;
+}
+
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6AD55;
+  padding: 5px;
+}
+
+.total-cost-card-container {
+  align-items: stretch !important;
+  width: 100%;
+}
+
+.total-cost-card {
+  overflow: auto;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch !important;
+  padding: 20px;
+  background-color: #ff6b00;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selected-stock-group {
+  padding: 0.5em;
+  border-radius: 0.375rem;
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px dashed orange;
+}
+
+.selected-stock-group button {
+  height: 1.25rem;
+  min-width: 1.25rem;
+  position: absolute;
+  font-size: 0.5em;
+  top: -0.625rem;
+  right: -0.625rem
+}

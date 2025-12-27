@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+    display: block !important;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
