@@ -20,7 +20,7 @@ sudo cp -r build/* /var/www/ihh/
 echo "Restarting Apache2..."
 sudo systemctl restart apache2
 echo "Restarting backend using pm2 ..."
-pm2 restart ihh
+pm2 restart coreOps
 
 
 echo "Deployment complete!"
