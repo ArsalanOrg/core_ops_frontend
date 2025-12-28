@@ -27,6 +27,8 @@ import {
   FaTasks,
   FaTools,
 } from 'react-icons/fa'
+import { MdFactory } from "react-icons/md";
+
 import { FcTodoList, FcDepartment } from 'react-icons/fc'
 import { IoIosChatbubbles, IoIosLock } from 'react-icons/io'
 import { MdOutlineManageAccounts } from 'react-icons/md'
@@ -265,7 +267,34 @@ const Sidebar = () => {
                   <Seperator></Seperator>
                 </AccordionPanel>
               </AccordionItem>
+              {/* Production */}
               <AccordionItem>
+
+                <AccordionButton bg='#6e92d4ff' borderRadius={4}>
+                  {/* <FaRegUser /> */}
+                  {/* <FaWarehouse /> */}
+                  <MdFactory />
+
+                  <Text ml={2}> Üretim </Text>
+                </AccordionButton>
+                <AccordionPanel>
+                  <SidebarItem
+                    to='/productionDashboard'
+                    label='Üretim Panosu'
+                    icon={FaTools}
+                  />
+                  <Seperator></Seperator>
+                  {/* <SidebarItem
+                    to='/inventoryLogs'
+                    label='Lojistik Hareketi'
+                    icon={TbLogs}
+                  /> */}
+                  <Seperator></Seperator>
+                </AccordionPanel>
+              </AccordionItem>
+
+              <AccordionItem>
+
                 <AccordionButton bg='#6e92d4ff' borderRadius={4}>
                   {/* <FaRegUser /> */}
                   <FaWarehouse />
